@@ -25,7 +25,7 @@ public class MenuInicio extends JFrame {
 
 	private JPanel contentPane;
 
-	/**
+	/**c
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {

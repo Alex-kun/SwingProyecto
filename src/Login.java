@@ -21,7 +21,7 @@ public class Login extends JFrame {
 	private JTextField textField;
 	private JPasswordField passwordField;
 	private ButtonGroup botones= new ButtonGroup();
-	/**
+	/**ct
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {

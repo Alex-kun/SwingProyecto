@@ -26,7 +26,7 @@ public class Actividad1 extends JFrame {
 	private JTextField textField;
 	
 
-	/**
+	/**r
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
@@ -161,3 +161,4 @@ public class Actividad1 extends JFrame {
 		
 	}
 }
+//
