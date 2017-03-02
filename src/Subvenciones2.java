@@ -22,6 +22,8 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import java.awt.SystemColor;
 
 public class Subvenciones2 extends JFrame {
 
@@ -67,22 +69,52 @@ public class Subvenciones2 extends JFrame {
 		JButton btnNewButton = new JButton("Asociaciones");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new Asociaciones1().setVisible(true);
+				dispose();
 			}
 		});
 		btnNewButton.setBounds(11, 157, 132, 23);
 		panel.add(btnNewButton);
 		
 		JButton btnSubvenciones = new JButton("Subvenciones");
+		btnSubvenciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
 		btnSubvenciones.setBounds(11, 191, 132, 23);
 		panel.add(btnSubvenciones);
 		
 		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
+		btnEspaciosMunicipales.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
+			}
+		});
 		btnEspaciosMunicipales.setBounds(11, 225, 132, 23);
 		panel.add(btnEspaciosMunicipales);
 		
 		JButton btnActividades = new JButton("Actividades");
+		btnActividades.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Actividad1().setVisible(true);
+				dispose();
+			}
+		});
 		btnActividades.setBounds(10, 259, 133, 23);
 		panel.add(btnActividades);
+		
+		JButton button = new JButton("Menu");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new MenuInicio().setVisible(true);
+				dispose();
+			}
+		});
+		button.setBounds(11, 446, 132, 23);
+		panel.add(button);
 		
 		textField = new JTextField();
 		textField.setBounds(208, 96, 127, 20);
@@ -121,8 +153,20 @@ public class Subvenciones2 extends JFrame {
 		contentPane.add(lblMunicipio);
 		
 		JButton btnInscribir = new JButton("Inscribir");
+		btnInscribir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new 	Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
 		btnInscribir.setBounds(588, 407, 89, 23);
 		contentPane.add(btnInscribir);
+		
+		JLabel label = new JLabel("Subvenciones");
+		label.setForeground(SystemColor.textHighlight);
+		label.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		label.setBounds(389, 19, 210, 41);
+		contentPane.add(label);
 		
 		
 	}

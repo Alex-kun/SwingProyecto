@@ -72,6 +72,7 @@ public class Login extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new MenuInicio().setVisible(true);
+				dispose();
 			}
 		});
 		btnNewButton.setBounds(153, 192, 105, 23);

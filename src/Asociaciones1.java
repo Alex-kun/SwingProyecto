@@ -14,6 +14,10 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
+import java.awt.SystemColor;
 
 public class Asociaciones1 extends JFrame {
 
@@ -61,16 +65,44 @@ public class Asociaciones1 extends JFrame {
 		panel.add(btnNewButton);
 		
 		JButton btnSubvenciones = new JButton("Subvenciones");
+		btnSubvenciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
 		btnSubvenciones.setBounds(11, 191, 132, 23);
 		panel.add(btnSubvenciones);
 		
 		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
+		btnEspaciosMunicipales.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
+			}
+		});
 		btnEspaciosMunicipales.setBounds(11, 225, 132, 23);
 		panel.add(btnEspaciosMunicipales);
 		
 		JButton btnActividades = new JButton("Actividades");
+		btnActividades.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Actividad1().setVisible(true);
+				dispose();
+			}
+		});
 		btnActividades.setBounds(10, 259, 133, 23);
 		panel.add(btnActividades);
+		
+		JButton btnMenu = new JButton("Menu");
+		btnMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new MenuInicio().setVisible(true);
+				dispose();
+			}
+		});
+		btnMenu.setBounds(11, 446, 132, 23);
+		panel.add(btnMenu);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(209, 157, 464, 171);
@@ -96,6 +128,12 @@ public class Asociaciones1 extends JFrame {
 		scrollPane.setViewportView(table);
 		
 		JButton btnInscribir = new JButton("Inscribir");
+		btnInscribir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Asociaciones2().setVisible(true);
+				dispose();
+			}
+		});
 		btnInscribir.setBounds(367, 388, 89, 23);
 		contentPane.add(btnInscribir);
 		
@@ -111,6 +149,12 @@ public class Asociaciones1 extends JFrame {
 		JLabel lblBusqueda = new JLabel("Busqueda");
 		lblBusqueda.setBounds(209, 85, 72, 14);
 		contentPane.add(lblBusqueda);
+		
+		JLabel lblAsociaciones = new JLabel("Asociaciones");
+		lblAsociaciones.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		lblAsociaciones.setForeground(SystemColor.textHighlight);
+		lblAsociaciones.setBounds(344, 26, 210, 41);
+		contentPane.add(lblAsociaciones);
 		
 		
 	}

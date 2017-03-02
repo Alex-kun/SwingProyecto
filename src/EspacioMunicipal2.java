@@ -14,16 +14,24 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JToggleButton;
+import javax.swing.JSpinner;
+import javax.swing.JTree;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import java.awt.SystemColor;
 
-public class Subvenciones1 extends JFrame {
+public class EspacioMunicipal2 extends JFrame {
 
 	private JPanel contentPane;
-	private JTable table;
 	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_4;
 
 	/**
 	 * Launch the application.
@@ -32,7 +40,7 @@ public class Subvenciones1 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Subvenciones1 frame = new Subvenciones1();
+					EspacioMunicipal2 frame = new EspacioMunicipal2();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,7 +52,7 @@ public class Subvenciones1 extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Subvenciones1() {
+	public EspacioMunicipal2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 743, 540);
 		contentPane = new JPanel();
@@ -69,6 +77,12 @@ public class Subvenciones1 extends JFrame {
 		panel.add(btnNewButton);
 		
 		JButton btnSubvenciones = new JButton("Subvenciones");
+		btnSubvenciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
 		btnSubvenciones.setBounds(11, 191, 132, 23);
 		panel.add(btnSubvenciones);
 		
@@ -102,61 +116,57 @@ public class Subvenciones1 extends JFrame {
 		button.setBounds(11, 446, 132, 23);
 		panel.add(button);
 		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(209, 157, 508, 171);
-		contentPane.add(scrollPane);
-		
-		table = new JTable();
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-			},
-			new String[] {
-				"Id", "Nombre", "Fecha Solicitud", "Importe Solicitado", "Modificar"
-			}
-		));
-		scrollPane.setViewportView(table);
-		
-		JButton btnInscribir = new JButton("Concesi\u00F3n");
-		btnInscribir.setBounds(342, 388, 114, 23);
-		contentPane.add(btnInscribir);
-		
-		JButton btnRegistro = new JButton("Solicitud");
-		btnRegistro.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Subvenciones2().setVisible(true);
-				dispose();
-			}
-		});
-		btnRegistro.setBounds(209, 388, 114, 23);
-		contentPane.add(btnRegistro);
-		
 		textField = new JTextField();
-		textField.setBounds(209, 110, 153, 23);
+		textField.setBounds(208, 96, 127, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblBusqueda = new JLabel("Busqueda");
-		lblBusqueda.setBounds(209, 85, 72, 14);
-		contentPane.add(lblBusqueda);
+		JLabel lblNombre = new JLabel("Espacio solicitado");
+		lblNombre.setBounds(208, 71, 153, 14);
+		contentPane.add(lblNombre);
 		
-		JButton btnJustificaciones = new JButton("Justificaciones");
-		btnJustificaciones.setBounds(209, 435, 247, 23);
-		contentPane.add(btnJustificaciones);
+		textField_1 = new JTextField();
+		textField_1.setBounds(355, 96, 127, 20);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
 		
-		JLabel lblSubvenciones = new JLabel("Subvenciones");
-		lblSubvenciones.setForeground(SystemColor.textHighlight);
-		lblSubvenciones.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		lblSubvenciones.setBounds(378, 31, 210, 41);
-		contentPane.add(lblSubvenciones);
+		JLabel lblCif = new JLabel("Fecha solicitud");
+		lblCif.setBounds(357, 71, 105, 14);
+		contentPane.add(lblCif);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(208, 230, 242, 80);
+		contentPane.add(textField_2);
+		textField_2.setColumns(10);
+		
+		JLabel lblDireccin = new JLabel("Caracter\u00EDsticas");
+		lblDireccin.setBounds(208, 205, 127, 14);
+		contentPane.add(lblDireccin);
+		
+		JButton btnInscribir = new JButton("Inscribir");
+		btnInscribir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
+			}
+		});
+		btnInscribir.setBounds(588, 407, 89, 23);
+		contentPane.add(btnInscribir);
+		
+		JLabel lblFechaConcesion = new JLabel("Fecha concesi\u00F3n ");
+		lblFechaConcesion.setBounds(520, 71, 105, 14);
+		contentPane.add(lblFechaConcesion);
+		
+		textField_4 = new JTextField();
+		textField_4.setColumns(10);
+		textField_4.setBounds(507, 96, 127, 20);
+		contentPane.add(textField_4);
+		
+		JLabel label = new JLabel("Espacios Municipales");
+		label.setForeground(SystemColor.textHighlight);
+		label.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		label.setBounds(306, 19, 328, 41);
+		contentPane.add(label);
 		
 		
 	}

@@ -19,11 +19,12 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import java.awt.SystemColor;
 
-public class Subvenciones1 extends JFrame {
+public class EspacioMunicipal1 extends JFrame {
 
 	private JPanel contentPane;
 	private JTable table;
 	private JTextField textField;
+	private JTable table_1;
 
 	/**
 	 * Launch the application.
@@ -32,7 +33,7 @@ public class Subvenciones1 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Subvenciones1 frame = new Subvenciones1();
+					EspacioMunicipal1 frame = new EspacioMunicipal1();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,7 +45,7 @@ public class Subvenciones1 extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Subvenciones1() {
+	public EspacioMunicipal1() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 743, 540);
 		contentPane = new JPanel();
@@ -69,16 +70,16 @@ public class Subvenciones1 extends JFrame {
 		panel.add(btnNewButton);
 		
 		JButton btnSubvenciones = new JButton("Subvenciones");
+		btnSubvenciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
 		btnSubvenciones.setBounds(11, 191, 132, 23);
 		panel.add(btnSubvenciones);
 		
 		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
-		btnEspaciosMunicipales.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new EspacioMunicipal1().setVisible(true);
-				dispose();
-			}
-		});
 		btnEspaciosMunicipales.setBounds(11, 225, 132, 23);
 		panel.add(btnEspaciosMunicipales);
 		
@@ -103,7 +104,7 @@ public class Subvenciones1 extends JFrame {
 		panel.add(button);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(209, 157, 508, 171);
+		scrollPane.setBounds(186, 165, 517, 171);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
@@ -120,10 +121,17 @@ public class Subvenciones1 extends JFrame {
 				{null, null, null, null, null},
 			},
 			new String[] {
-				"Id", "Nombre", "Fecha Solicitud", "Importe Solicitado", "Modificar"
+				"Id", "Nombre asociaciones", "Fecha solicitud", "Espacio solicitado", "Modificar"
 			}
 		));
+		table.getColumnModel().getColumn(0).setPreferredWidth(28);
+		table.getColumnModel().getColumn(1).setPreferredWidth(117);
+		table.getColumnModel().getColumn(2).setPreferredWidth(92);
+		table.getColumnModel().getColumn(3).setPreferredWidth(100);
 		scrollPane.setViewportView(table);
+		
+		table_1 = new JTable();
+		scrollPane.setColumnHeaderView(table_1);
 		
 		JButton btnInscribir = new JButton("Concesi\u00F3n");
 		btnInscribir.setBounds(342, 388, 114, 23);
@@ -132,7 +140,7 @@ public class Subvenciones1 extends JFrame {
 		JButton btnRegistro = new JButton("Solicitud");
 		btnRegistro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new Subvenciones2().setVisible(true);
+				new EspacioMunicipal2().setVisible(true);
 				dispose();
 			}
 		});
@@ -152,11 +160,11 @@ public class Subvenciones1 extends JFrame {
 		btnJustificaciones.setBounds(209, 435, 247, 23);
 		contentPane.add(btnJustificaciones);
 		
-		JLabel lblSubvenciones = new JLabel("Subvenciones");
-		lblSubvenciones.setForeground(SystemColor.textHighlight);
-		lblSubvenciones.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		lblSubvenciones.setBounds(378, 31, 210, 41);
-		contentPane.add(lblSubvenciones);
+		JLabel lblEspaciosMunicipales = new JLabel("Espacios Municipales");
+		lblEspaciosMunicipales.setForeground(SystemColor.textHighlight);
+		lblEspaciosMunicipales.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		lblEspaciosMunicipales.setBounds(301, 34, 328, 41);
+		contentPane.add(lblEspaciosMunicipales);
 		
 		
 	}

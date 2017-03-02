@@ -63,6 +63,7 @@ public class MenuInicio extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				new Asociaciones1().setVisible(true);
+				dispose();
 				
 			}
 		});
@@ -73,6 +74,7 @@ public class MenuInicio extends JFrame {
 		btnSubvenciones.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Subvenciones1().setVisible(true);
+				dispose();
 			}
 		});
 		btnSubvenciones.setBounds(11, 191, 132, 23);
@@ -81,6 +83,8 @@ public class MenuInicio extends JFrame {
 		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
 		btnEspaciosMunicipales.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
 				
 			}
 		});
@@ -90,11 +94,23 @@ public class MenuInicio extends JFrame {
 		JButton btnActividades = new JButton("Actividades");
 		btnActividades.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new Actividad1().setVisible(true);
+				dispose();
 				
 			}
 		});
 		btnActividades.setBounds(10, 259, 133, 23);
 		panel.add(btnActividades);
+		
+		JButton btnSalir = new JButton("Salir");
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Login().setVisible(true);
+				dispose();
+			}
+		});
+		btnSalir.setBounds(11, 446, 132, 23);
+		panel.add(btnSalir);
 			
 		JLabel lblNewLabel = new JLabel("");
 		Image img = new ImageIcon(this.getClass().getResource("/logo.png")).getImage();
