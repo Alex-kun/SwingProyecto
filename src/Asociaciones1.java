@@ -26,7 +26,7 @@ public class Asociaciones1 extends JFrame {
 	private JTextField textField;
 	
 
-	/**ct
+	/**ctt
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {

@@ -49,7 +49,8 @@ public class Subvenciones2 extends JFrame {
 		});
 	}
 
-	/**
+	/**g
+	 * 
 	 * Create the frame.
 	 */
 	public Subvenciones2() {

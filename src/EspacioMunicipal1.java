@@ -26,7 +26,7 @@ public class EspacioMunicipal1 extends JFrame {
 	private JTextField textField;
 	private JTable table_1;
 
-	/**ct
+	/**ctyr
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {

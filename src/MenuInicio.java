@@ -42,7 +42,7 @@ public class MenuInicio extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Create the frame.t
 	 */
 	public MenuInicio() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

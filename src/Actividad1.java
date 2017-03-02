@@ -27,7 +27,7 @@ public class Actividad1 extends JFrame {
 	
 
 	/**r
-	 * Launch the application.
+	 * Launch tthe application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

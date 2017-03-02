@@ -39,7 +39,7 @@ public class Actividad2 extends JFrame {
 	private JTextField textField_3;
 	private JTextField textField_5;
 
-	/**ce
+	/**cey
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
