@@ -70,14 +70,29 @@ public class MenuInicio extends JFrame {
 		panel.add(btnNewButton);
 		
 		JButton btnSubvenciones = new JButton("Subvenciones");
+		btnSubvenciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+			}
+		});
 		btnSubvenciones.setBounds(11, 191, 132, 23);
 		panel.add(btnSubvenciones);
 		
 		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
+		btnEspaciosMunicipales.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnEspaciosMunicipales.setBounds(11, 225, 132, 23);
 		panel.add(btnEspaciosMunicipales);
 		
 		JButton btnActividades = new JButton("Actividades");
+		btnActividades.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnActividades.setBounds(10, 259, 133, 23);
 		panel.add(btnActividades);
 			

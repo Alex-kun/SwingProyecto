@@ -14,6 +14,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Subvenciones1 extends JFrame {
 
@@ -93,12 +95,17 @@ public class Subvenciones1 extends JFrame {
 		));
 		scrollPane.setViewportView(table);
 		
-		JButton btnInscribir = new JButton("Inscribir");
-		btnInscribir.setBounds(367, 388, 89, 23);
+		JButton btnInscribir = new JButton("Concesi\u00F3n");
+		btnInscribir.setBounds(342, 388, 114, 23);
 		contentPane.add(btnInscribir);
 		
-		JButton btnRegistro = new JButton("Registro");
-		btnRegistro.setBounds(209, 388, 89, 23);
+		JButton btnRegistro = new JButton("Solicitud");
+		btnRegistro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones2().setVisible(true);
+			}
+		});
+		btnRegistro.setBounds(209, 388, 114, 23);
 		contentPane.add(btnRegistro);
 		
 		textField = new JTextField();
@@ -109,6 +116,10 @@ public class Subvenciones1 extends JFrame {
 		JLabel lblBusqueda = new JLabel("Busqueda");
 		lblBusqueda.setBounds(209, 85, 72, 14);
 		contentPane.add(lblBusqueda);
+		
+		JButton btnJustificaciones = new JButton("Justificaciones");
+		btnJustificaciones.setBounds(209, 435, 247, 23);
+		contentPane.add(btnJustificaciones);
 		
 		
 	}
