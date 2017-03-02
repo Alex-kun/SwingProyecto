@@ -12,6 +12,8 @@ import javax.swing.JRadioButton;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JSeparator;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
@@ -67,6 +69,11 @@ public class Login extends JFrame {
 		contentPane.add(lblContrasea);
 		
 		JButton btnNewButton = new JButton("Entrar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new MenuInicio().setVisible(true);
+			}
+		});
 		btnNewButton.setBounds(153, 192, 105, 23);
 		contentPane.add(btnNewButton);
 	}
