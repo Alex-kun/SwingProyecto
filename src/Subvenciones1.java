@@ -125,10 +125,6 @@ public class Subvenciones1 extends JFrame {
 		));
 		scrollPane.setViewportView(table);
 		
-		JButton btnInscribir = new JButton("Concesi\u00F3n");
-		btnInscribir.setBounds(342, 388, 114, 23);
-		contentPane.add(btnInscribir);
-		
 		JButton btnRegistro = new JButton("Solicitud");
 		btnRegistro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -136,7 +132,7 @@ public class Subvenciones1 extends JFrame {
 				dispose();
 			}
 		});
-		btnRegistro.setBounds(209, 388, 114, 23);
+		btnRegistro.setBounds(209, 388, 128, 23);
 		contentPane.add(btnRegistro);
 		
 		textField = new JTextField();
@@ -149,7 +145,13 @@ public class Subvenciones1 extends JFrame {
 		contentPane.add(lblBusqueda);
 		
 		JButton btnJustificaciones = new JButton("Justificaciones");
-		btnJustificaciones.setBounds(209, 435, 247, 23);
+		btnJustificaciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new Subvenciones3().setVisible(true);
+				dispose();
+			}
+		});
+		btnJustificaciones.setBounds(209, 422, 128, 23);
 		contentPane.add(btnJustificaciones);
 		
 		JLabel lblSubvenciones = new JLabel("Subvenciones");

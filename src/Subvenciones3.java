@@ -25,11 +25,10 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import java.awt.SystemColor;
 
-public class Subvenciones2 extends JFrame {
+public class Subvenciones3 extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
 
@@ -40,7 +39,7 @@ public class Subvenciones2 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Subvenciones2 frame = new Subvenciones2();
+					Subvenciones3 frame = new Subvenciones3();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -53,7 +52,7 @@ public class Subvenciones2 extends JFrame {
 	 * 
 	 * Create the frame.
 	 */
-	public Subvenciones2() {
+	public Subvenciones3() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 743, 540);
 		contentPane = new JPanel();
@@ -122,26 +121,17 @@ public class Subvenciones2 extends JFrame {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblNombre = new JLabel("Nombre de Asociaci\u00F3n");
-		lblNombre.setBounds(208, 71, 153, 14);
+		JLabel lblNombre = new JLabel("ID de Asociaci\u00F3n");
+		lblNombre.setBounds(208, 71, 172, 14);
 		contentPane.add(lblNombre);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(355, 96, 127, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
-		
-		JLabel lblCif = new JLabel("Fecha Solicitud");
-		lblCif.setBounds(357, 71, 105, 14);
-		contentPane.add(lblCif);
 		
 		textField_2 = new JTextField();
 		textField_2.setBounds(208, 237, 242, 80);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
-		JLabel lblDireccin = new JLabel("Actividades previstas");
-		lblDireccin.setBounds(208, 212, 127, 14);
+		JLabel lblDireccin = new JLabel("Justificacion subvenci\u00F3n");
+		lblDireccin.setBounds(208, 212, 153, 14);
 		contentPane.add(lblDireccin);
 		
 		textField_3 = new JTextField();
@@ -149,18 +139,18 @@ public class Subvenciones2 extends JFrame {
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JLabel lblMunicipio = new JLabel("Importe Solicitado");
-		lblMunicipio.setBounds(208, 131, 103, 14);
+		JLabel lblMunicipio = new JLabel("Nombre de Asociaci\u00F3n");
+		lblMunicipio.setBounds(208, 131, 153, 14);
 		contentPane.add(lblMunicipio);
 		
-		JButton btnInscribir = new JButton("Solicitar");
+		JButton btnInscribir = new JButton("Volver a listado");
 		btnInscribir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new 	Subvenciones1().setVisible(true);
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(588, 407, 89, 23);
+		btnInscribir.setBounds(522, 415, 153, 23);
 		contentPane.add(btnInscribir);
 		
 		JLabel label = new JLabel("Subvenciones");
@@ -168,6 +158,18 @@ public class Subvenciones2 extends JFrame {
 		label.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		label.setBounds(389, 19, 210, 41);
 		contentPane.add(label);
+		
+		JButton btnImprimir = new JButton("Imprimir");
+		btnImprimir.setBounds(208, 368, 127, 23);
+		contentPane.add(btnImprimir);
+		
+		JButton btnEnviarEmail = new JButton("Enviar E-Mail");
+		btnEnviarEmail.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnEnviarEmail.setBounds(208, 415, 127, 23);
+		contentPane.add(btnEnviarEmail);
 		
 		
 	}

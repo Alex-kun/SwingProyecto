@@ -133,10 +133,6 @@ public class EspacioMunicipal1 extends JFrame {
 		table_1 = new JTable();
 		scrollPane.setColumnHeaderView(table_1);
 		
-		JButton btnInscribir = new JButton("Concesi\u00F3n");
-		btnInscribir.setBounds(342, 388, 114, 23);
-		contentPane.add(btnInscribir);
-		
 		JButton btnRegistro = new JButton("Solicitud");
 		btnRegistro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -155,10 +151,6 @@ public class EspacioMunicipal1 extends JFrame {
 		JLabel lblBusqueda = new JLabel("Busqueda");
 		lblBusqueda.setBounds(209, 85, 72, 14);
 		contentPane.add(lblBusqueda);
-		
-		JButton btnJustificaciones = new JButton("Justificaciones");
-		btnJustificaciones.setBounds(209, 435, 247, 23);
-		contentPane.add(btnJustificaciones);
 		
 		JLabel lblEspaciosMunicipales = new JLabel("Espacios Municipales");
 		lblEspaciosMunicipales.setForeground(SystemColor.textHighlight);

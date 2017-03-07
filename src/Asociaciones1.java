@@ -134,12 +134,8 @@ public class Asociaciones1 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(367, 388, 89, 23);
+		btnInscribir.setBounds(209, 387, 89, 23);
 		contentPane.add(btnInscribir);
-		
-		JButton btnRegistro = new JButton("Registro");
-		btnRegistro.setBounds(209, 388, 89, 23);
-		contentPane.add(btnRegistro);
 		
 		textField = new JTextField();
 		textField.setBounds(209, 110, 153, 23);

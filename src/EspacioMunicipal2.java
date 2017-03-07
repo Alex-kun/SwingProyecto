@@ -143,7 +143,7 @@ public class EspacioMunicipal2 extends JFrame {
 		lblDireccin.setBounds(208, 205, 127, 14);
 		contentPane.add(lblDireccin);
 		
-		JButton btnInscribir = new JButton("Inscribir");
+		JButton btnInscribir = new JButton("Solicitar");
 		btnInscribir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new EspacioMunicipal1().setVisible(true);

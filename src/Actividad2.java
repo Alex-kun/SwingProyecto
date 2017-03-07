@@ -56,7 +56,7 @@ public class Actividad2 extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Create thes frame.
 	 */
 	public Actividad2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

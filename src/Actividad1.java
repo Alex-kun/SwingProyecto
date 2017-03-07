@@ -26,8 +26,8 @@ public class Actividad1 extends JFrame {
 	private JTextField textField;
 	
 
-	/**rd
-	 * Launch tthe application.
+	/**rdd
+	 * Launchw tthe application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -40,11 +40,11 @@ public class Actividad1 extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
+		}); 
 	}
 
 	/**
-	 * Create the frame.
+	 * Create the framse s.
 	 */
 	public Actividad1() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -136,12 +136,8 @@ public class Actividad1 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(367, 388, 89, 23);
+		btnInscribir.setBounds(209, 388, 89, 23);
 		contentPane.add(btnInscribir);
-		
-		JButton btnRegistro = new JButton("Registro");
-		btnRegistro.setBounds(209, 388, 89, 23);
-		contentPane.add(btnRegistro);
 		
 		textField = new JTextField();
 		textField.setBounds(209, 110, 153, 23);
