@@ -54,11 +54,55 @@ public class MenuInicio extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(30, 144, 255));
-		panel.setBounds(0, 0, 153, 501);
+		panel.setBounds(0, 0, 729, 70);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
 		JButton btnNewButton = new JButton("Asociaciones");
+		btnNewButton.setBounds(10, 21, 132, 23);
+		panel.add(btnNewButton);
+		
+		JButton btnSubvenciones = new JButton("Subvenciones");
+		btnSubvenciones.setBounds(152, 21, 132, 23);
+		panel.add(btnSubvenciones);
+		
+		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
+		btnEspaciosMunicipales.setBounds(294, 21, 132, 23);
+		panel.add(btnEspaciosMunicipales);
+		
+		JButton btnActividades = new JButton("Actividades");
+		btnActividades.setBounds(436, 21, 133, 23);
+		panel.add(btnActividades);
+		
+		JButton btnSalir = new JButton("Salir");
+		btnSalir.setBounds(642, 21, 77, 23);
+		panel.add(btnSalir);
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Login().setVisible(true);
+				dispose();
+			}
+		});
+		btnActividades.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Actividad1().setVisible(true);
+				dispose();
+				
+			}
+		});
+		btnEspaciosMunicipales.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
+				
+			}
+		});
+		btnSubvenciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
@@ -67,55 +111,11 @@ public class MenuInicio extends JFrame {
 				
 			}
 		});
-		btnNewButton.setBounds(11, 157, 132, 23);
-		panel.add(btnNewButton);
-		
-		JButton btnSubvenciones = new JButton("Subvenciones");
-		btnSubvenciones.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Subvenciones1().setVisible(true);
-				dispose();
-			}
-		});
-		btnSubvenciones.setBounds(11, 191, 132, 23);
-		panel.add(btnSubvenciones);
-		
-		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
-		btnEspaciosMunicipales.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new EspacioMunicipal1().setVisible(true);
-				dispose();
-				
-			}
-		});
-		btnEspaciosMunicipales.setBounds(11, 225, 132, 23);
-		panel.add(btnEspaciosMunicipales);
-		
-		JButton btnActividades = new JButton("Actividades");
-		btnActividades.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Actividad1().setVisible(true);
-				dispose();
-				
-			}
-		});
-		btnActividades.setBounds(10, 259, 133, 23);
-		panel.add(btnActividades);
-		
-		JButton btnSalir = new JButton("Salir");
-		btnSalir.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Login().setVisible(true);
-				dispose();
-			}
-		});
-		btnSalir.setBounds(11, 446, 132, 23);
-		panel.add(btnSalir);
 			
 		JLabel lblNewLabel = new JLabel("");
 		Image img = new ImageIcon(this.getClass().getResource("/logo.png")).getImage();
 		lblNewLabel.setIcon(new ImageIcon(img));
-		lblNewLabel.setBounds(271, 159, 284, 128);
+		lblNewLabel.setBounds(226, 81, 284, 128);
 		contentPane.add(lblNewLabel);
 	}
 }

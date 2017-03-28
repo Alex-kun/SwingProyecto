@@ -64,142 +64,86 @@ public class Asociaciones2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setBackground(new Color(30, 144, 255));
-		panel.setBounds(0, 0, 153, 501);
-		contentPane.add(panel);
-		panel.setLayout(null);
-		
-		JButton btnNewButton = new JButton("Asociaciones");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Asociaciones1().setVisible(true);
-				dispose();
-			}
-		});
-		btnNewButton.setBounds(11, 157, 132, 23);
-		panel.add(btnNewButton);
-		
-		JButton btnSubvenciones = new JButton("Subvenciones");
-		btnSubvenciones.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Subvenciones1().setVisible(true);
-				dispose();
-			}
-		});
-		btnSubvenciones.setBounds(11, 191, 132, 23);
-		panel.add(btnSubvenciones);
-		
-		JButton btnEspaciosMunicipales = new JButton("Esp Municipales");
-		btnEspaciosMunicipales.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new EspacioMunicipal1().setVisible(true);
-				dispose();
-			}
-		});
-		btnEspaciosMunicipales.setBounds(11, 225, 132, 23);
-		panel.add(btnEspaciosMunicipales);
-		
-		JButton btnActividades = new JButton("Actividades");
-		btnActividades.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Actividad1().setVisible(true);
-				dispose();
-			}
-		});
-		btnActividades.setBounds(10, 259, 133, 23);
-		panel.add(btnActividades);
-		
-		JButton btnMenu = new JButton("Menu");
-		btnMenu.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new MenuInicio().setVisible(true);
-				dispose();
-			}
-		});
-		btnMenu.setBounds(11, 446, 132, 23);
-		panel.add(btnMenu);
-		
 		textField = new JTextField();
-		textField.setBounds(208, 96, 105, 20);
+		textField.setBounds(146, 171, 105, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNombre = new JLabel("Nombre");
-		lblNombre.setBounds(208, 71, 65, 14);
+		lblNombre.setBounds(146, 146, 65, 14);
 		contentPane.add(lblNombre);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(345, 96, 105, 20);
+		textField_1.setBounds(283, 171, 105, 20);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		JLabel lblCif = new JLabel("CIF");
-		lblCif.setBounds(345, 71, 73, 14);
+		lblCif.setBounds(283, 146, 73, 14);
 		contentPane.add(lblCif);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(208, 156, 242, 20);
+		textField_2.setBounds(146, 231, 242, 20);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JLabel lblDireccin = new JLabel("Direcci\u00F3n");
-		lblDireccin.setBounds(208, 137, 92, 14);
+		lblDireccin.setBounds(146, 212, 92, 14);
 		contentPane.add(lblDireccin);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(474, 156, 86, 20);
+		textField_3.setBounds(412, 231, 86, 20);
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
 		JLabel lblMunicipio = new JLabel("Municipio");
-		lblMunicipio.setBounds(478, 137, 65, 14);
+		lblMunicipio.setBounds(416, 212, 65, 14);
 		contentPane.add(lblMunicipio);
 		
 		textField_4 = new JTextField();
-		textField_4.setBounds(591, 156, 86, 20);
+		textField_4.setBounds(529, 231, 86, 20);
 		contentPane.add(textField_4);
 		textField_4.setColumns(10);
 		
 		JLabel lblCodigoPostal = new JLabel("Codigo Postal");
-		lblCodigoPostal.setBounds(591, 137, 86, 14);
+		lblCodigoPostal.setBounds(529, 212, 86, 14);
 		contentPane.add(lblCodigoPostal);
 		
 		textField_5 = new JTextField();
-		textField_5.setBounds(208, 216, 105, 20);
+		textField_5.setBounds(146, 291, 105, 20);
 		contentPane.add(textField_5);
 		textField_5.setColumns(10);
 		
 		textField_6 = new JTextField();
-		textField_6.setBounds(345, 216, 105, 20);
+		textField_6.setBounds(283, 291, 105, 20);
 		contentPane.add(textField_6);
 		textField_6.setColumns(10);
 		
 		JLabel lblTraductor = new JLabel("Tel\u00E9fono Movil");
-		lblTraductor.setBounds(208, 191, 92, 14);
+		lblTraductor.setBounds(146, 266, 92, 14);
 		contentPane.add(lblTraductor);
 		
 		JLabel lblTelfonoFijo = new JLabel("Tel\u00E9fono Fijo");
-		lblTelfonoFijo.setBounds(345, 191, 79, 14);
+		lblTelfonoFijo.setBounds(283, 266, 79, 14);
 		contentPane.add(lblTelfonoFijo);
 		
 		textField_7 = new JTextField();
-		textField_7.setBounds(208, 272, 242, 20);
+		textField_7.setBounds(146, 347, 242, 20);
 		contentPane.add(textField_7);
 		textField_7.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("E-mail");
-		lblEmail.setBounds(208, 247, 46, 14);
+		lblEmail.setBounds(146, 322, 46, 14);
 		contentPane.add(lblEmail);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Tipo", "Ejemplo 1", "Ejemplo 2", "Ejemplo 3"}));
 		comboBox.setToolTipText("");
-		comboBox.setBounds(208, 344, 112, 20);
+		comboBox.setBounds(146, 407, 112, 20);
 		contentPane.add(comboBox);
 		
 		JLabel lblTipoDeAsociacin = new JLabel("Tipo de Asociaci\u00F3n");
-		lblTipoDeAsociacin.setBounds(208, 319, 146, 14);
+		lblTipoDeAsociacin.setBounds(146, 382, 146, 14);
 		contentPane.add(lblTipoDeAsociacin);
 		
 		JButton btnInscribir = new JButton("Inscribir");
@@ -209,14 +153,70 @@ public class Asociaciones2 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(588, 407, 89, 23);
+		btnInscribir.setBounds(529, 406, 89, 23);
 		contentPane.add(btnInscribir);
 		
 		JLabel label = new JLabel("Asociaciones");
 		label.setForeground(SystemColor.textHighlight);
 		label.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		label.setBounds(397, 23, 210, 41);
+		label.setBounds(287, 94, 210, 41);
 		contentPane.add(label);
+		
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(new Color(30, 144, 255));
+		panel.setBounds(0, 0, 729, 70);
+		contentPane.add(panel);
+		
+		JButton button = new JButton("Asociaciones");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Asociaciones1().setVisible(true);
+				dispose();
+			}
+		});
+		button.setBounds(10, 23, 132, 23);
+		panel.add(button);
+		
+		JButton button_1 = new JButton("Subvenciones");
+		button_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
+		button_1.setBounds(152, 23, 132, 23);
+		panel.add(button_1);
+		
+		JButton button_2 = new JButton("Esp Municipales");
+		button_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
+			}
+		});
+		button_2.setBounds(298, 23, 132, 23);
+		panel.add(button_2);
+		
+		JButton button_3 = new JButton("Actividades");
+		button_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Actividad1().setVisible(true);
+				dispose();
+			}
+		});
+		button_3.setBounds(451, 23, 133, 23);
+		panel.add(button_3);
+		
+		JButton button_4 = new JButton("Menu");
+		button_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new MenuInicio().setVisible(true);
+				dispose();
+			}
+		});
+		button_4.setBounds(633, 23, 86, 23);
+		panel.add(button_4);
 		
 		
 	}
