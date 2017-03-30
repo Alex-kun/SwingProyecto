@@ -61,30 +61,30 @@ public class Subvenciones3 extends JFrame {
 		contentPane.setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(208, 159, 127, 20);
+		textField.setBounds(102, 150, 127, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNombre = new JLabel("ID de Asociaci\u00F3n");
-		lblNombre.setBounds(208, 134, 172, 14);
+		lblNombre.setBounds(102, 125, 172, 14);
 		contentPane.add(lblNombre);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(208, 300, 242, 80);
+		textField_2.setBounds(102, 291, 242, 80);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JLabel lblDireccin = new JLabel("Justificacion subvenci\u00F3n");
-		lblDireccin.setBounds(208, 275, 153, 14);
+		lblDireccin.setBounds(102, 266, 153, 14);
 		contentPane.add(lblDireccin);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(208, 219, 127, 20);
+		textField_3.setBounds(102, 210, 127, 20);
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
 		JLabel lblMunicipio = new JLabel("Nombre de Asociaci\u00F3n");
-		lblMunicipio.setBounds(208, 194, 153, 14);
+		lblMunicipio.setBounds(102, 185, 153, 14);
 		contentPane.add(lblMunicipio);
 		
 		JButton btnInscribir = new JButton("Volver a listado");
@@ -94,17 +94,17 @@ public class Subvenciones3 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(521, 440, 153, 23);
+		btnInscribir.setBounds(415, 431, 153, 23);
 		contentPane.add(btnInscribir);
 		
 		JLabel label = new JLabel("Subvenciones");
 		label.setForeground(SystemColor.textHighlight);
 		label.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		label.setBounds(391, 91, 210, 41);
+		label.setBounds(285, 82, 210, 41);
 		contentPane.add(label);
 		
 		JButton btnImprimir = new JButton("Imprimir");
-		btnImprimir.setBounds(208, 404, 127, 23);
+		btnImprimir.setBounds(102, 395, 127, 23);
 		contentPane.add(btnImprimir);
 		
 		JButton btnEnviarEmail = new JButton("Enviar E-Mail");
@@ -112,7 +112,7 @@ public class Subvenciones3 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnEnviarEmail.setBounds(208, 440, 127, 23);
+		btnEnviarEmail.setBounds(102, 431, 127, 23);
 		contentPane.add(btnEnviarEmail);
 		
 		JPanel panel = new JPanel();

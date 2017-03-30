@@ -168,6 +168,16 @@ public class EspacioMunicipal2 extends JFrame {
 		button_4.setBounds(633, 23, 86, 23);
 		panel.add(button_4);
 		
+		JButton button_5 = new JButton("Volver");
+		button_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new EspacioMunicipal1().setVisible(true);
+				dispose();
+			}
+		});
+		button_5.setBounds(511, 378, 89, 23);
+		contentPane.add(button_5);
+		
 		
 	}
 }

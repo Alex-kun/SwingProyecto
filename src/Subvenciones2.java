@@ -62,39 +62,39 @@ public class Subvenciones2 extends JFrame {
 		contentPane.setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(187, 219, 127, 20);
+		textField.setBounds(157, 199, 127, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNombre = new JLabel("Nombre de Asociaci\u00F3n");
-		lblNombre.setBounds(187, 194, 153, 14);
+		lblNombre.setBounds(157, 174, 153, 14);
 		contentPane.add(lblNombre);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(334, 219, 127, 20);
+		textField_1.setBounds(304, 199, 127, 20);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		JLabel lblCif = new JLabel("Fecha Solicitud");
-		lblCif.setBounds(336, 194, 105, 14);
+		lblCif.setBounds(306, 174, 105, 14);
 		contentPane.add(lblCif);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(187, 360, 242, 80);
+		textField_2.setBounds(157, 340, 242, 80);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JLabel lblDireccin = new JLabel("Actividades previstas");
-		lblDireccin.setBounds(187, 335, 127, 14);
+		lblDireccin.setBounds(157, 315, 127, 14);
 		contentPane.add(lblDireccin);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(187, 279, 127, 20);
+		textField_3.setBounds(157, 259, 127, 20);
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
 		JLabel lblMunicipio = new JLabel("Importe Solicitado");
-		lblMunicipio.setBounds(187, 254, 103, 14);
+		lblMunicipio.setBounds(157, 234, 103, 14);
 		contentPane.add(lblMunicipio);
 		
 		JButton btnInscribir = new JButton("Solicitar");
@@ -104,13 +104,13 @@ public class Subvenciones2 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(584, 417, 89, 23);
+		btnInscribir.setBounds(488, 340, 89, 23);
 		contentPane.add(btnInscribir);
 		
 		JLabel label = new JLabel("Subvenciones");
 		label.setForeground(SystemColor.textHighlight);
 		label.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		label.setBounds(368, 142, 210, 41);
+		label.setBounds(261, 94, 210, 41);
 		contentPane.add(label);
 		
 		JPanel panel = new JPanel();
@@ -166,6 +166,16 @@ public class Subvenciones2 extends JFrame {
 		});
 		button_4.setBounds(633, 23, 86, 23);
 		panel.add(button_4);
+		
+		JButton button_5 = new JButton("Volver");
+		button_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Subvenciones1().setVisible(true);
+				dispose();
+			}
+		});
+		button_5.setBounds(488, 397, 89, 23);
+		contentPane.add(button_5);
 		
 		
 	}

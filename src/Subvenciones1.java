@@ -53,24 +53,24 @@ public class Subvenciones1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(209, 236, 508, 171);
+		scrollPane.setBounds(106, 218, 508, 171);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
 			},
 			new String[] {
-				"Id", "Nombre", "Fecha Solicitud", "Importe Solicitado", "Modificar"
+				"Id", "Nombre", "Fecha Solicitud", "Importe Solicitado"
 			}
 		));
 		scrollPane.setViewportView(table);
@@ -82,16 +82,16 @@ public class Subvenciones1 extends JFrame {
 				dispose();
 			}
 		});
-		btnRegistro.setBounds(209, 433, 128, 23);
+		btnRegistro.setBounds(106, 415, 128, 23);
 		contentPane.add(btnRegistro);
 		
 		textField = new JTextField();
-		textField.setBounds(209, 189, 153, 23);
+		textField.setBounds(106, 171, 153, 23);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblBusqueda = new JLabel("Busqueda");
-		lblBusqueda.setBounds(209, 164, 72, 14);
+		lblBusqueda.setBounds(106, 146, 72, 14);
 		contentPane.add(lblBusqueda);
 		
 		JButton btnJustificaciones = new JButton("Justificaciones");
@@ -101,13 +101,13 @@ public class Subvenciones1 extends JFrame {
 				dispose();
 			}
 		});
-		btnJustificaciones.setBounds(209, 467, 128, 23);
+		btnJustificaciones.setBounds(106, 449, 128, 23);
 		contentPane.add(btnJustificaciones);
 		
 		JLabel lblSubvenciones = new JLabel("Subvenciones");
 		lblSubvenciones.setForeground(SystemColor.textHighlight);
 		lblSubvenciones.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		lblSubvenciones.setBounds(352, 114, 210, 41);
+		lblSubvenciones.setBounds(249, 96, 210, 41);
 		contentPane.add(lblSubvenciones);
 		
 		JPanel panel = new JPanel();

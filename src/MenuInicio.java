@@ -24,6 +24,7 @@ import java.awt.event.ActionEvent;
 public class MenuInicio extends JFrame {
 
 	private JPanel contentPane;
+	private JTable table;
 
 	/**c
 	 * Launch the application.
@@ -117,5 +118,31 @@ public class MenuInicio extends JFrame {
 		lblNewLabel.setIcon(new ImageIcon(img));
 		lblNewLabel.setBounds(226, 81, 284, 128);
 		contentPane.add(lblNewLabel);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(117, 253, 483, 204);
+		contentPane.add(scrollPane);
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+			},
+			new String[] {
+				"Asociaciones", "Subvenciones", "Esp Municipales", "Actividades"
+			}
+		));
+		scrollPane.setViewportView(table);
 	}
 }

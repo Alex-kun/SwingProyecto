@@ -24,7 +24,6 @@ public class EspacioMunicipal1 extends JFrame {
 	private JPanel contentPane;
 	private JTable table;
 	private JTextField textField;
-	private JTable table_1;
 
 	/**ctyr
 	 * Launch the application.
@@ -54,24 +53,24 @@ public class EspacioMunicipal1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(177, 265, 517, 171);
+		scrollPane.setBounds(90, 237, 517, 171);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
-				{null, null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
 			},
 			new String[] {
-				"Id", "Nombre asociaciones", "Fecha solicitud", "Espacio solicitado", "Modificar"
+				"Id", "Nombre asociaciones", "Fecha solicitud", "Espacio solicitado"
 			}
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(28);
@@ -80,9 +79,6 @@ public class EspacioMunicipal1 extends JFrame {
 		table.getColumnModel().getColumn(3).setPreferredWidth(100);
 		scrollPane.setViewportView(table);
 		
-		table_1 = new JTable();
-		scrollPane.setColumnHeaderView(table_1);
-		
 		JButton btnRegistro = new JButton("Solicitud");
 		btnRegistro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -90,22 +86,22 @@ public class EspacioMunicipal1 extends JFrame {
 				dispose();
 			}
 		});
-		btnRegistro.setBounds(177, 467, 114, 23);
+		btnRegistro.setBounds(90, 439, 114, 23);
 		contentPane.add(btnRegistro);
 		
 		textField = new JTextField();
-		textField.setBounds(175, 218, 153, 23);
+		textField.setBounds(88, 190, 153, 23);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblBusqueda = new JLabel("Busqueda");
-		lblBusqueda.setBounds(175, 193, 72, 14);
+		lblBusqueda.setBounds(88, 165, 72, 14);
 		contentPane.add(lblBusqueda);
 		
 		JLabel lblEspaciosMunicipales = new JLabel("Espacios Municipales");
 		lblEspaciosMunicipales.setForeground(SystemColor.textHighlight);
 		lblEspaciosMunicipales.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		lblEspaciosMunicipales.setBounds(273, 123, 328, 41);
+		lblEspaciosMunicipales.setBounds(186, 95, 328, 41);
 		contentPane.add(lblEspaciosMunicipales);
 		
 		JPanel panel = new JPanel();

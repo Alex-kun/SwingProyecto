@@ -67,26 +67,26 @@ public class Actividad2 extends JFrame {
 		contentPane.setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(208, 209, 127, 20);
+		textField.setBounds(136, 190, 127, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNombre = new JLabel("Nombre");
-		lblNombre.setBounds(208, 184, 153, 14);
+		lblNombre.setBounds(136, 165, 153, 14);
 		contentPane.add(lblNombre);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(367, 209, 127, 20);
+		textField_1.setBounds(295, 190, 127, 20);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(449, 348, 242, 80);
+		textField_2.setBounds(377, 329, 242, 80);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JLabel lblDireccin = new JLabel("Descripci\u00F3n");
-		lblDireccin.setBounds(449, 323, 127, 14);
+		lblDireccin.setBounds(377, 304, 127, 14);
 		contentPane.add(lblDireccin);
 		
 		JButton btnInscribir = new JButton("Inscribir");
@@ -96,43 +96,43 @@ public class Actividad2 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(590, 454, 89, 23);
+		btnInscribir.setBounds(530, 435, 89, 23);
 		contentPane.add(btnInscribir);
 		
 		JLabel lblFechaConcesion = new JLabel("Direcci\u00F3n");
-		lblFechaConcesion.setBounds(208, 257, 105, 14);
+		lblFechaConcesion.setBounds(136, 238, 105, 14);
 		contentPane.add(lblFechaConcesion);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(208, 282, 218, 20);
+		textField_4.setBounds(136, 263, 218, 20);
 		contentPane.add(textField_4);
 		
 		JLabel lblNDestinatarios = new JLabel("N\u00BA Destinatarios\r\n");
-		lblNDestinatarios.setBounds(208, 313, 105, 14);
+		lblNDestinatarios.setBounds(136, 294, 105, 14);
 		contentPane.add(lblNDestinatarios);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(208, 338, 127, 20);
+		textField_3.setBounds(136, 319, 127, 20);
 		contentPane.add(textField_3);
 		
 		JLabel lblOrganizadoPor = new JLabel("Organizado por:");
-		lblOrganizadoPor.setBounds(208, 369, 105, 14);
+		lblOrganizadoPor.setBounds(136, 350, 105, 14);
 		contentPane.add(lblOrganizadoPor);
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(208, 394, 127, 20);
+		textField_5.setBounds(136, 375, 127, 20);
 		contentPane.add(textField_5);
 		
 		JLabel lblTipo = new JLabel("Tipo");
-		lblTipo.setBounds(208, 430, 105, 14);
+		lblTipo.setBounds(136, 411, 105, 14);
 		contentPane.add(lblTipo);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"--Selecione un tipo--", "Ejemplo 1", "Ejemplo 2", "Ejemplo3"}));
-		comboBox.setBounds(208, 455, 153, 20);
+		comboBox.setBounds(136, 436, 153, 20);
 		contentPane.add(comboBox);
 		
 		JLabel label = new JLabel("Actividad");
@@ -198,8 +198,18 @@ public class Actividad2 extends JFrame {
 		panel.add(button_4);
 		
 		JLabel lblCif = new JLabel("Fecha ");
-		lblCif.setBounds(371, 184, 105, 14);
+		lblCif.setBounds(299, 165, 105, 14);
 		contentPane.add(lblCif);
+		
+		JButton button_5 = new JButton("Volver");
+		button_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Actividad1().setVisible(true);
+				dispose();
+			}
+		});
+		button_5.setBounds(377, 435, 89, 23);
+		contentPane.add(button_5);
 		
 		
 	}

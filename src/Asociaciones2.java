@@ -218,6 +218,16 @@ public class Asociaciones2 extends JFrame {
 		button_4.setBounds(633, 23, 86, 23);
 		panel.add(button_4);
 		
+		JButton btnVolver = new JButton("Volver");
+		btnVolver.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Asociaciones1().setVisible(true);
+				dispose();
+			}
+		});
+		btnVolver.setBounds(409, 406, 89, 23);
+		contentPane.add(btnVolver);
+		
 		
 	}
 }

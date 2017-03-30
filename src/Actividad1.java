@@ -55,24 +55,24 @@ public class Actividad1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(180, 249, 526, 171);
+		scrollPane.setBounds(101, 224, 526, 171);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
 			},
 			new String[] {
-				"Id", "Nombre actividades", "Lugar", "Direccion", "Organizadores", "Modificar"
+				"Id", "Nombre actividades", "Lugar", "Direccion", "Organizadores"
 			}
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(44);
@@ -86,22 +86,22 @@ public class Actividad1 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(180, 452, 89, 23);
+		btnInscribir.setBounds(101, 446, 89, 23);
 		contentPane.add(btnInscribir);
 		
 		textField = new JTextField();
-		textField.setBounds(180, 196, 153, 23);
+		textField.setBounds(101, 171, 153, 23);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblBusqueda = new JLabel("Busqueda");
-		lblBusqueda.setBounds(180, 171, 72, 14);
+		lblBusqueda.setBounds(101, 146, 72, 14);
 		contentPane.add(lblBusqueda);
 		
 		JLabel lblActividad = new JLabel("Actividad");
 		lblActividad.setForeground(SystemColor.textHighlight);
 		lblActividad.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		lblActividad.setBounds(353, 110, 194, 41);
+		lblActividad.setBounds(269, 94, 194, 41);
 		contentPane.add(lblActividad);
 		
 		JPanel panel = new JPanel();

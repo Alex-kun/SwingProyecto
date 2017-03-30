@@ -113,24 +113,24 @@ public class Asociaciones1 extends JFrame {
 		});
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(209, 287, 464, 171);
+		scrollPane.setBounds(113, 241, 464, 171);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
+				{null, null, null, null, null},
 			},
 			new String[] {
-				"Id", "Nombre", "CIF", "Municipio", "C\u00F3digo Postal", "Modificar"
+				"Id", "Nombre", "CIF", "Municipio", "C\u00F3digo Postal"
 			}
 		));
 		scrollPane.setViewportView(table);
@@ -142,22 +142,22 @@ public class Asociaciones1 extends JFrame {
 				dispose();
 			}
 		});
-		btnInscribir.setBounds(209, 467, 89, 23);
+		btnInscribir.setBounds(113, 421, 89, 23);
 		contentPane.add(btnInscribir);
 		
 		textField = new JTextField();
-		textField.setBounds(209, 240, 153, 23);
+		textField.setBounds(113, 194, 153, 23);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblBusqueda = new JLabel("Busqueda");
-		lblBusqueda.setBounds(209, 215, 72, 14);
+		lblBusqueda.setBounds(113, 169, 72, 14);
 		contentPane.add(lblBusqueda);
 		
 		JLabel lblAsociaciones = new JLabel("Asociaciones");
 		lblAsociaciones.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		lblAsociaciones.setForeground(SystemColor.textHighlight);
-		lblAsociaciones.setBounds(344, 156, 210, 41);
+		lblAsociaciones.setBounds(248, 110, 210, 41);
 		contentPane.add(lblAsociaciones);
 		
 		
